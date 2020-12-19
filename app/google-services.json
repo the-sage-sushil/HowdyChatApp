@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "224169944158",
+    "firebase_url": "https://wadagang-1b5d7.firebaseio.com",
+    "project_id": "wadagang-1b5d7",
+    "storage_bucket": "wadagang-1b5d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224169944158:android:eb0e4827a79bb71d47c0cf",
+        "android_client_info": {
+          "package_name": "com.example.wadagang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224169944158-anhlv1oi1a2k0ascoi0op1n9io97lg57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT8JRiz897Z4A7b-g8lEOreDgACdAvMaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224169944158-anhlv1oi1a2k0ascoi0op1n9io97lg57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
