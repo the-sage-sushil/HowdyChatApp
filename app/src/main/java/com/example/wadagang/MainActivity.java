@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.wadagang.Calling.CallingFirst;
+import com.example.wadagang.Calling.CallingSecond;
 import com.example.wadagang.Extras.ChangeStatus;
 import com.example.wadagang.Fragments.ChatFragment;
 import com.example.wadagang.Fragments.ProfileFragment;
@@ -112,10 +114,15 @@ public class MainActivity extends AppCompatActivity {
 
                return true;
            case R.id.Profile_Settings:
-               startActivity(new Intent(MainActivity.this, ChangeStatus.class));
+               Intent j=new Intent(MainActivity.this, ChangeStatus.class);
+               startActivity(j);
 
            case R.id.calling:
-               startActivity(new Intent(MainActivity.this, CallingList.class));
+               String userid=firebaseuser.getUid().toString();
+                Intent i=new Intent(MainActivity.this, CallingSecond.class);
+                i.putExtra("Userid",userid);
+                startActivity(i);
+
 
 
 

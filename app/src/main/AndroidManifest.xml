@@ -24,7 +24,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Calling.CallingFirst"></activity>
+        <activity
+            android:name=".Extras.Displayshow"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_displayshow"
+            android:theme="@style/AppTheme.Fullscreen"></activity>
+        <activity android:name=".Calling.CallingSecond" />
+        <activity
+            android:name=".Calling.CallingFirst"
+            android:screenOrientation="portrait" />
 
         <service
             android:name="com.Notificationhandler"

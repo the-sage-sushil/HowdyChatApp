@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.wadagang.Extras.Displayshow;
 import com.example.wadagang.MessageActivity;
 import com.example.wadagang.Model.Users;
 import com.example.wadagang.R;
@@ -44,7 +45,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         final Users users=mUsers.get(position);
         holder.username.setText(users.getUsername());
         holder.Profilestatus.setText(users.getProfilestatus());
@@ -80,6 +81,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 Intent i=new Intent(context, MessageActivity.class);
                 i.putExtra("userid",users.getId());
                 context.startActivity(i);
+
+
+
+
             }
         });
 
